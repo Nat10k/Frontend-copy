@@ -1,0 +1,49 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	font-family: "Plus Jakarta Sans";
+	color: white;
+	background-color: black;
+}
+
+ul {
+	@apply list-disc pl-6
+}
+
+.no-scrollbar::-webkit-scrollbar {
+	display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.no-scrollbar {
+	-ms-overflow-style: none;
+	/* IE and Edge */
+	scrollbar-width: none;
+	/* Firefox */
+}
+
+li {
+	@apply list-disc text-base pl-2
+}
+
+h1 {
+	@apply text-2xl sm:text-4xl font-bold
+}
+
+h2 {
+	@apply text-xl sm:text-2xl
+}
+
+h3 {
+	@apply text-xl font-bold
+}
+
+p {
+	@apply text-base sm:text-lg
+}

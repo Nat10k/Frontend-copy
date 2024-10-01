@@ -1,0 +1,13 @@
+{
+	"compilerOptions": {
+		"target": "ES6",
+		"lib":["ES2020", "DOM"],
+		"jsx": "react",
+		"esModuleInterop": true,
+		"moduleResolution": "node",
+		"paths": {
+      "@module/*": ["./src/module/*"],
+      "@route/*": ["./src/route/*"]
+    }
+	}
+}
